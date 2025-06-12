@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+Dorixona V1 - Farmatsevtika Veb Sayti
+Loyiha haqida
+Veb manzil: https://dorixona-v1.vercel.app
 
-## Project info
+Kodni qanday tahrirlash mumkin?
+Ilovangizni tahrirlashning bir necha usuli mavjud.
 
-**URL**: https://lovable.dev/projects/6cc211f9-d4a4-459f-8997-31a8b960ece8
+1. Mahalliy muhitda ishlash
+Agar mahalliy kompyuteringizda ishlamoqchi bo'lsangiz, quyidagi amallarni bajaring:
 
-## How can I edit this code?
+# 1. Repozitoriyani klon qilish
+git clone https://github.com/foydalanuvchi/dorixona-v1.git
 
-There are several ways of editing your application.
+# 2. Loyiha papkasiga o'tish
+cd dorixona-v1
 
-**Use Lovable**
+# 3. Zarur paketlarni o'rnatish
+npm install
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6cc211f9-d4a4-459f-8997-31a8b960ece8) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Rivojlash serverini ishga tushirish
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+2. To'g'ridan-to'g'ri GitHubda tahrirlash
+GitHubdagi istalgan faylga o'ting
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+O'ng yuqori burchakdagi "Edit" (qalam belgisi) tugmasini bosing
 
-**Use GitHub Codespaces**
+O'zgartirishlarni kiritib, "Commit changes" tugmasini bosing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. GitHub Codespaces yordamida
+GitHub repozitoriyasining asosiy sahifasiga o'ting
 
-## What technologies are used for this project?
+"Code" (yashil tugma) ni bosing
 
-This project is built with:
+"Codespaces" yorlig'ini tanlang
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+"New codespace" ni bosib yangi muhit yarating
 
-## How can I deploy this project?
+Loyihada qo'llanilgan texnologiyalar
+Vite
 
-Simply open [Lovable](https://lovable.dev/projects/6cc211f9-d4a4-459f-8997-31a8b960ece8) and click on Share -> Publish.
+React.js
 
-## Can I connect a custom domain to my Lovable project?
+Tailwind CSS
 
-Yes, you can!
+Vercel (deploy platformasi)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Loyihani qanday deploy qilish mumkin?
+Loyiha Vercel platformasida joylashtirilgan. Yangi versiyalarni deploy qilish uchun:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+O'zgarishlarni GitHubga push qiling:
+
+sh
+git add .
+git commit -m "Yangilanishlar"
+git push
+Vercel avtomatik ravishda yangi versiyani deploy qiladi
+
+Maxsus domen ulash
+Agar saytga maxsus domen ulamoqchi bo'lsangiz:
+
+Vercel dashboardiga kirish
+
+Loyiha Settings > Domains bo'limiga o'tish
+
+Kerakli domenni kiritish va ko'rsatmalarga amal qilish
