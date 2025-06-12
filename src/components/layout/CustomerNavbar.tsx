@@ -1,18 +1,11 @@
-
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { 
-  Home, 
-  Search, 
-  ShoppingCart, 
-  User,
-  LogOut
-} from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "@/contexts/AuthContext";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Home, Search, ShoppingCart, User, LogOut } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 const CustomerNavbar = () => {
   const location = useLocation();
@@ -20,10 +13,15 @@ const CustomerNavbar = () => {
   const cartItemsCount = 3; // Demo uchun
 
   const navItems = [
-    { path: '/customer', label: 'Bosh sahifa', icon: Home },
-    { path: '/customer/medicines', label: 'Dorilar', icon: Search },
-    { path: '/customer/cart', label: 'Savat', icon: ShoppingCart, badge: cartItemsCount },
-    { path: '/customer/orders', label: 'Buyurtmalar', icon: User },
+    { path: "/customer", label: "Bosh sahifa", icon: Home },
+    { path: "/customer/medicines", label: "Dorilar", icon: Search },
+    {
+      path: "/customer/cart",
+      label: "Savat",
+      icon: ShoppingCart,
+      badge: cartItemsCount,
+    },
+    { path: "/customer/orders", label: "Buyurtmalar", icon: User },
   ];
 
   return (
@@ -37,7 +35,7 @@ const CustomerNavbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/customer" className="flex items-center space-x-2">
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.1 }}
               className="w-8 h-8 bg-primary rounded-full flex items-center justify-center"
             >
@@ -62,7 +60,10 @@ const CustomerNavbar = () => {
                 <item.icon className="h-4 w-4" />
                 {item.label}
                 {item.badge && item.badge > 0 && (
-                  <Badge variant="destructive" className="ml-1 h-5 min-w-5 flex items-center justify-center text-xs">
+                  <Badge
+                    variant="destructive"
+                    className="ml-1 h-5 min-w-5 flex items-center justify-center text-xs"
+                  >
                     {item.badge}
                   </Badge>
                 )}
@@ -92,7 +93,7 @@ const CustomerNavbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="md:hidden border-t border-border">
+      <div className="md:hidden fixed bottom-0 left-0 w-full border-t border-border bg-background z-50">
         <div className="flex justify-around py-2">
           {navItems.map((item) => (
             <Link
@@ -108,7 +109,10 @@ const CustomerNavbar = () => {
               <item.icon className="h-5 w-5" />
               <span>{item.label}</span>
               {item.badge && item.badge > 0 && (
-                <Badge variant="destructive" className="absolute -top-1 -right-1 h-4 min-w-4 flex items-center justify-center text-xs">
+                <Badge
+                  variant="destructive"
+                  className="absolute -top-1 -right-1 h-4 min-w-4 flex items-center justify-center text-xs"
+                >
                   {item.badge}
                 </Badge>
               )}

@@ -266,14 +266,6 @@ const MedicinesPage = () => {
                   {medicine.manufacturer}
                 </p>
                 
-                <div className="flex items-center gap-1 mb-2">
-                  <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm">4.5</span>
-                  <span className="text-xs text-muted-foreground ml-1">
-                    ({Math.floor(Math.random() * 100)} sharh)
-                  </span>
-                </div>
-                
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-bold text-lg">
                     {medicine.price.toLocaleString()} so'm

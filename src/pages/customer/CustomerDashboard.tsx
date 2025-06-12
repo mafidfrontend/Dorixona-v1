@@ -201,11 +201,6 @@ const CustomerDashboard = () => {
                   <h3 className="font-semibold mb-1">{medicine.name}</h3>
                   <p className="text-sm text-muted-foreground mb-2 capitalize">{medicine.type}</p>
                   
-                  <div className="flex items-center gap-1 mb-2">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm">{medicine.rating}</span>
-                  </div>
-                  
                   <div className="flex items-center justify-between mb-3">
                     <span className="font-bold text-lg">{medicine.price.toLocaleString()} so'm</span>
                     <Badge variant={medicine.inStock ? "default" : "secondary"}>
