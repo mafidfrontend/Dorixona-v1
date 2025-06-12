@@ -20,7 +20,6 @@ import NotificationDetailsPage from "./pages/admin/NotificationDetailsPage";
 import AdminLayout from "./components/layout/AdminLayout";
 import CustomerLayout from "./components/layout/CustomerLayout";
 import NotFound from "./pages/NotFound";
-import { User } from "@/types";
 import PharmacyAdminDashboard from "./pages/admin/PharmacyAdminDashboard";
 
 const queryClient = new QueryClient();
